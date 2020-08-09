@@ -6,7 +6,7 @@
 
 
 private _allEvents = [
-	["test Event 1", 60, "[] spawn grad_uhu_fnc_testEvent1"],
+	["spawn Camp search Party", 1180, "[] spawn grad_uhu_fnc_spawnCampSearchParrty"],
 	["test Event 2", 120, "[] spawn grad_uhu_fnc_testEvent2"],
 	["test Event 3", 180, "[] spawn grad_uhu_fnc_testEvent3"]
 ];

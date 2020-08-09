@@ -10,7 +10,7 @@ class CO_OP_Uhu {
 		file = USER\functions\GRAD_EventManagement;
 
 		class startEventTimer {};
-		class testEvent1 {};
+		class spawnCampSearchParrty {};
 		class testEvent2 {};
 		class testEvent3 {};
 	};
