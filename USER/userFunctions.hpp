@@ -12,6 +12,7 @@ class CO_OP_Uhu {
 		class startEventTimer {};
 		class spawnCampSearchParrty {};
 		class spawnFlyby {};
+		class spawnExfilHelos {};
 		class testEvent3 {};
 	};
 };

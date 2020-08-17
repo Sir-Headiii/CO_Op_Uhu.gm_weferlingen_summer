@@ -8,7 +8,8 @@
 private _allEvents = [
 	["spawn Camp search Party", 1180, "[] spawn grad_uhu_fnc_spawnCampSearchParrty"],
 	["fly by", 4400, "[] spawn grad_uhu_fnc_spawnFlyby"],
-	["test Event 3", 180, "[] spawn grad_uhu_fnc_testEvent3"]
+	["test Event 3", 180, "[] spawn grad_uhu_fnc_testEvent3"],
+	["Helo Exfil", 7010, "[] spawn grad_uhu_fnc_spawnExfilHelos"]
 ];
 
 {
