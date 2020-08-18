@@ -13,6 +13,8 @@ class CO_OP_Uhu {
 		class spawnCampSearchParrty {};
 		class spawnFlyby {};
 		class spawnExfilHelos {};
+		class spawnGraslebenConvoy {};
+		class spawnVehicleWithCrew {};
 		class testEvent3 {};
 	};
 };
