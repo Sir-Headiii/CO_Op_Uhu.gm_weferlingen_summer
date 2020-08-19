@@ -15,6 +15,7 @@ class CO_OP_Uhu {
 		class spawnExfilHelos {};
 		class spawnGraslebenConvoy {};
 		class spawnVehicleWithCrew {};
+		class spawnReinforcementsMarientalHorst {};
 		class testEvent3 {};
 	};
 };

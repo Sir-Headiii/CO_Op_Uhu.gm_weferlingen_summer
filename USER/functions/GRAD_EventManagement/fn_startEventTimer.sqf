@@ -10,7 +10,8 @@ private _allEvents = [
 	["fly by", 4400, "[] spawn grad_uhu_fnc_spawnFlyby"],
 	["test Event 3", 180, "[] spawn grad_uhu_fnc_testEvent3"],
 	["Helo Exfil", 7010, "[] spawn grad_uhu_fnc_spawnExfilHelos"],
-	["Grasleben Convoy", 2600, "[] spawn grad_uhu_fnc_spawnGraslebenConvoy"]
+	["Grasleben Convoy", 2600, "[] spawn grad_uhu_fnc_spawnGraslebenConvoy"],
+	["Reinforcements Mariental (Horst)", 3600, "[] spawn grad_uhu_fnc_spawnReinforcementsMarientalHorst"]
 ];
 
 {
