@@ -83,4 +83,4 @@ _minute = _now # 4;
 
 [format['[0%1:%2] Grasleben convoy is on its way.', _hour, _minute]] remoteExec ["systemChat", _allCurators];
 //systemChat str _convoy;
-[_convoy] execVM "USER\scripts\startConvoy.sqf";
+[_convoy] execVM "USER\scripts\startConvoyGrasleben.sqf";
