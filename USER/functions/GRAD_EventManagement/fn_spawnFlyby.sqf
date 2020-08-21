@@ -5,6 +5,8 @@ private _planeClass = "gm_ge_airforce_do28d2";
 private _planeFlightHeight = 500;
 
 private _plane = createVehicle [_planeClass, _spawnPosition, [], 0, "FLY"];
+_plane setVehicleVarName "FlyByPlane";
+FlyByPlane = _plane;
 private _planePos = getPosATL _plane;
 _plane setPosATL [_planePos # 0, _planePos # 1, _planeFlightHeight];
 _plane setDir((getPosATL _plane) getDir _targetPosition);
