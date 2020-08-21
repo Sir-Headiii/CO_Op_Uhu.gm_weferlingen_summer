@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2166;
+		nextID=2168;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=338;
+		nextID=346;
 	};
 	class Camera
 	{
-		pos[]={10168.797,652.31128,6242.1392};
-		dir[]={0.76751047,-0.45566121,-0.45116225};
-		up[]={0.39286694,0.89011049,-0.23093514};
-		aside[]={-0.50681865,-1.8882565e-007,-0.86220002};
+		pos[]={11001.548,203.47456,2311.0735};
+		dir[]={0.22627613,-0.25856465,0.9391287};
+		up[]={0.060567386,0.96599334,0.25137645};
+		aside[]={0.9721868,-7.6062861e-008,-0.2342421};
 	};
 };
 binarizationWanted=0;
@@ -6909,7 +6909,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=233;
+		items=235;
 		class Item0
 		{
 			dataType="Layer";
@@ -15086,7 +15086,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11414.462,109.88749,6755.1675};
-				angles[]={-0,3.9622154,0};
+				angles[]={0,3.9622154,0};
 			};
 			side="Empty";
 			flags=4;
@@ -25270,6 +25270,160 @@ class Mission
 			colorName="ColorEAST";
 			id=2165;
 			atlOffset=-8.392334e-005;
+		};
+		class Item233
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10891.933,2184.3521,5507.3496};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="lightObject2";
+			};
+			id=2166;
+			type="Sign_Sphere100cm_F";
+			atlOffset=1999.9995;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#(argb,8,8,3)color(1,1,1,1.0,ca)";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item234
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8741.2646,2160.8452,6862.0859};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="lightObject3";
+			};
+			id=2167;
+			type="Sign_Sphere100cm_F";
+			atlOffset=2000;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#(argb,8,8,3)color(1,1,1,1.0,ca)";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 	};
 	class Connections
