@@ -18,6 +18,6 @@ class CO_OP_Uhu {
 		class spawnReinforcementsMarientalHorst {};
 		class spawnSPWConvoy {};
 		class spawnFireOnWreck {};
-		class testEvent3 {};
+		class startSearchlight {};
 	};
 };
