@@ -6,8 +6,8 @@
 class CO_OP_Uhu {
 	tag = "grad_uhu";
 
-	class GRAD_EventManagement {
-		file = USER\functions\GRAD_EventManagement;
+	class GRAD_Uhu {
+		file = USER\functions\GRAD_Uhu;
 
 		class startEventTimer {};
 		class spawnCampSearchParrty {};
@@ -17,6 +17,7 @@ class CO_OP_Uhu {
 		class spawnVehicleWithCrew {};
 		class spawnReinforcementsMarientalHorst {};
 		class spawnSPWConvoy {};
+		class spawnFireOnWreck {};
 		class testEvent3 {};
 	};
 };
