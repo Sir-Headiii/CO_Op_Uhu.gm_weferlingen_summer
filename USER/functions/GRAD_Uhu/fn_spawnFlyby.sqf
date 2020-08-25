@@ -19,6 +19,46 @@ _waypoint setWaypointSpeed "FULL";
 
 _plane flyInHeight _planeFlightHeight;
 
+[{
+	(damage (_this # 0) >= 0.55) || (count (crew (_this # 0)) <= 0)
+},{
+	(_this # 0) setDamage 1;
+}, [_plane]] call CBA_fnc_waitUntilAndExecute;
+
+[{
+	(getPos (_this # 0)) inArea [[11004.2,8915.79,505.947], 500, 500, 0, false]
+}, {
+	
+	if (alive ZSU1 && alive ZSU2 && alive ZSU3) then {
+		activateAntiAirSirens = true;
+	};
+	
+	[{
+		{
+			createVehicleCrew _x;
+			private _vehicleGroup = group _x;
+			_vehicleGroup reveal [_this#0, 4];
+			_x doTarget (_this#0);
+			[_this # 0, _x] spawn {
+				while {(alive (_this # 0)) && (count (crew (_this # 0)) > 0)} do {
+					(_this # 1) doTarget (_this # 0);
+				};
+			};
+			[{
+				(!(alive (_this#0))) || (count (crew (_this#0)) <= 0)
+			}, {
+				//(group (_this#1)) setBehaviour "SAFE";
+				_this#1 setPilotLight false;
+				[{
+					{
+						deleteVehicle _x;
+					} forEach (units (_this#0));
+				}, [_this # 1], 5] call CBA_fnc_waitAndExecute;
+			}, [_this # 0, _x]] call CBA_fnc_waitUntilAndExecute;
+		} forEach [ZSU1, ZSU2, ZSU3];
+	}, [_this # 0], 10] call CBA_fnc_waitAndExecute;
+}, [_plane]] call CBA_fnc_waitUntilAndExecute;
+
 private _allCurators = [];
 {
 	_allCurators pushBackUnique (getAssignedCuratorUnit _x);     
