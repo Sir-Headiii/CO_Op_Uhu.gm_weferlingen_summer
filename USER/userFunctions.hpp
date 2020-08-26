@@ -19,5 +19,6 @@ class CO_OP_Uhu {
 		class spawnSPWConvoy {};
 		class spawnFireOnWreck {};
 		class startSearchlight {};
+		class startSearchlightSetDir {};
 	};
 };

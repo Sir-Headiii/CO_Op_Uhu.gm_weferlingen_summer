@@ -66,3 +66,10 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
 
     },0.5,[_convoy param [_i-1,objNull],_convoy select _i,_convoy param [_i+1,objNull],_convoy select 0]] call CBA_fnc_addPerFrameHandler;
 };
+
+// private _allCurators = [];
+// {
+// 	_allCurators pushBackUnique (getAssignedCuratorUnit _x);     
+// } forEach allCurators;
+
+// [format['[0%1:%2] points: ', str(_points)]] remoteExec ["systemChat", _allCurators];
