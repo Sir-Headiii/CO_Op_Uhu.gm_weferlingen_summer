@@ -8,25 +8,25 @@ private _allGroups = [];
 
 private _currentSpawnPosition = _firstSpawnPosition;
 
-private _searchLightSPW = "gm_gc_army_brdm2um" createVehicle _currentSpawnPosition;
-_searchLightSPW setDir _spawnDirection;
-private _searchLightSPwCrew = createVehicleCrew _searchLightSPW;
-[[_searchLightSPW],{(_this # 1) setVehicleVarName "searchLightSPWPatrol"; searchLightSPWPatrol = (_this # 1);}] remoteExec ["call"];
-private _moveWaypoint = _searchLightSPwCrew addWaypoint [[8077.64,4338.21,0], 0, 1];
-_moveWaypoint setWaypointSpeed "FULL";
-private _moveWaypoint2 = _searchLightSPwCrew addWaypoint [[8947.06,5736.09,0], 0, 2];
-_moveWaypoint2 setWaypointStatements ["true", "[] spawn {searchLightSPWPatrol action ['SearchlightOn']; searchLightSPWPatrol addWeaponTurret ['fakeweapon', [0]]; while {(behaviour searchLightSPWPatrol) != 'COMBAT'} do {private _foo = 270; while {_foo < 440} do {searchLightSPWPatrol doWatch (searchLightSPWPatrol getRelPos [200, _foo]); _foo = _foo + 0.5; sleep 0.1;}; while {_foo > 280} do {searchLightSPWPatrol doWatch (searchLightSPWPatrol getRelPos [200, _foo]); _foo = _foo - 0.5; sleep 0.1;};};};"];
-private _patrolWaypoint05 = _searchLightSPwCrew addWaypoint [[8767.35,6124.3,0], 0, 3];
-_patrolWaypoint05 setWaypointStatements ["true", "searchLightSPWPatrol limitSpeed 20;"];
-private _patrolWaypoint1 = _searchLightSPwCrew addWaypoint [[8204.72,6992.36,0], 0, 4];
-private _patrolWaypoint2 = _searchLightSPwCrew addWaypoint [[7776.94,6760.83,0], 0, 5];
-_patrolWaypoint2 setWaypointStatements ["true", "searchLightSPWPatrol limitSpeed 30;"];
-private _patrolWaypoint3 = _searchLightSPwCrew addWaypoint [[8481.2,5629.19,0], 0, 6];
-_patrolWaypoint3 setWaypointStatements ["true", "searchLightSPWPatrol limitSpeed 60;"];
-private _patrolWaypoint4 = _searchLightSPwCrew addWaypoint [[8771.95,6114.6,0], 0, 7];
-_patrolWaypoint4 setWaypointType "CYCLE";
+// private _searchLightSPW = "gm_gc_army_brdm2um" createVehicle _currentSpawnPosition;
+// _searchLightSPW setDir _spawnDirection;
+// private _searchLightSPwCrew = createVehicleCrew _searchLightSPW;
+// [[_searchLightSPW],{(_this # 1) setVehicleVarName "searchLightSPWPatrol"; searchLightSPWPatrol = (_this # 1);}] remoteExec ["call"];
+// private _moveWaypoint = _searchLightSPwCrew addWaypoint [[8077.64,4338.21,0], 0, 1];
+// _moveWaypoint setWaypointSpeed "FULL";
+// private _moveWaypoint2 = _searchLightSPwCrew addWaypoint [[8947.06,5736.09,0], 0, 2];
+// _moveWaypoint2 setWaypointStatements ["true", "[] spawn {searchLightSPWPatrol action ['SearchlightOn']; searchLightSPWPatrol addWeaponTurret ['fakeweapon', [0]]; while {(behaviour searchLightSPWPatrol) != 'COMBAT'} do {private _foo = 270; while {_foo < 440} do {searchLightSPWPatrol doWatch (searchLightSPWPatrol getRelPos [200, _foo]); _foo = _foo + 0.5; sleep 0.1;}; while {_foo > 280} do {searchLightSPWPatrol doWatch (searchLightSPWPatrol getRelPos [200, _foo]); _foo = _foo - 0.5; sleep 0.1;};};};"];
+// private _patrolWaypoint05 = _searchLightSPwCrew addWaypoint [[8767.35,6124.3,0], 0, 3];
+// _patrolWaypoint05 setWaypointStatements ["true", "searchLightSPWPatrol limitSpeed 20;"];
+// private _patrolWaypoint1 = _searchLightSPwCrew addWaypoint [[8204.72,6992.36,0], 0, 4];
+// private _patrolWaypoint2 = _searchLightSPwCrew addWaypoint [[7776.94,6760.83,0], 0, 5];
+// _patrolWaypoint2 setWaypointStatements ["true", "searchLightSPWPatrol limitSpeed 30;"];
+// private _patrolWaypoint3 = _searchLightSPwCrew addWaypoint [[8481.2,5629.19,0], 0, 6];
+// _patrolWaypoint3 setWaypointStatements ["true", "searchLightSPWPatrol limitSpeed 60;"];
+// private _patrolWaypoint4 = _searchLightSPwCrew addWaypoint [[8771.95,6114.6,0], 0, 7];
+// _patrolWaypoint4 setWaypointType "CYCLE";
 
-_currentSpawnPosition = _currentSpawnPosition getPos [75, _spawnDirection + 180];
+// _currentSpawnPosition = _currentSpawnPosition getPos [75, _spawnDirection + 180];
 
 for [{_i = 0}, {_i < 4}, {_i = _i + 1}] do {
 	private _vehicle = _vehicleClass createVehicle _currentSpawnPosition;

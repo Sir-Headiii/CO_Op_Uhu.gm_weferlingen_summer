@@ -1,6 +1,6 @@
 
 private _spawnPosition = [6039.75,16407.4,500];
-private _targetPosition = [15252.5,580.046,900];
+private _targetPosition = [18384,296.317,0];
 private _planeClass = "gm_ge_airforce_do28d2";
 private _planeFlightHeight = 1000;
 
@@ -18,13 +18,13 @@ _waypoint setWaypointBehaviour "CARELESS";
 _waypoint setWaypointSpeed "FULL";
 
 [{
-	(damage (_this # 0) >= 0.55) || (count (crew (_this # 0)) <= 0)
+	(damage (_this # 0) >= 0.05) || (count (crew (_this # 0)) <= 0)
 },{
 	(_this # 0) setDamage 1;
 }, [_plane]] call CBA_fnc_waitUntilAndExecute;
 
 [{
-	(getPos (_this # 0)) inArea [[11004.2,8915.79,505.947], 600, 600, 0, false]
+	(getPos (_this # 0)) inArea [[9915.58,9671.76,0], 1000, 1000, 0, false]
 }, {
 	
 	if (alive ZSU1 && alive ZSU2 && alive ZSU3) then {

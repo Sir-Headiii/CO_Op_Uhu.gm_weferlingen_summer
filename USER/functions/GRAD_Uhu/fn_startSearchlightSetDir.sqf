@@ -1,8 +1,8 @@
 params ["_searchlight", ["_code", {(damage _this < 0.1) && !((behaviour _this) isEqualTo "COMBAT")}], ["_turnDegrees", 0.25], ["_turnStart", 275], ["_turnEnd", 445], ["_sleepTime", 0.04], ["_allTheWay", false]];
 
-_searchlight action ["SearchlightOn"];
+// _searchlight action ["SearchlightOn"];
 _searchlight addWeaponTurret ["fakeweapon", [0]];
-deleteVehicle ((crew _searchlight) # 0);
+// deleteVehicle ((crew _searchlight) # 0);
 
 private _incrementer = _turnStart;
 private _condition = _searchlight call _code;
