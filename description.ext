@@ -95,6 +95,18 @@ class CfgNotifications
 	#include "USER\userNotifications.hpp"
 };
 
+class CfgMusic
+{
+    tracks[] = {};
+	class IntroMusic
+    {
+        // display name
+        name = "IntroMusic";
+
+        // filename, volume, pitch
+        sound[]	= { "\USER\music\Uhu_Intro.ogg", db + 10, 1.0 };
+    };
+};
 
 //PARAMS =======================================================================
 class Params {
@@ -104,6 +116,7 @@ class Params {
 
 //SOUNDS =======================================================================
 class CfgSounds {
+    // tracks[] = {};
 	#include "USER\userSounds.hpp"
 };
 
