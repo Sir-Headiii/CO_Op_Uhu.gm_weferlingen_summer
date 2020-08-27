@@ -7,11 +7,12 @@
 
 private _allEvents = [
 	["spawn Camp search Party", 1180, "[] spawn grad_uhu_fnc_spawnCampSearchParrty"],
-	["fly by", 4400, "[] spawn grad_uhu_fnc_spawnFlyby"],
+	["fly by", 3800, "[] spawn grad_uhu_fnc_spawnFlyby"],
 	["Helo Exfil", 7010, "[] spawn grad_uhu_fnc_spawnExfilHelos"],
 	["Grasleben Convoy", 2600, "[] spawn grad_uhu_fnc_spawnGraslebenConvoy"],
-	["Reinforcements Mariental (Horst)", 3180, "[] spawn grad_uhu_fnc_spawnReinforcementsMarientalHorst"],
-	["SPW Konvoi", 3900, "[] spawn grad_uhu_fnc_spawnSPWConvoy"]
+	["Reinforcements Mariental (Horst)", 4400, "[] spawn grad_uhu_fnc_spawnReinforcementsMarientalHorst"],
+	["SPW Konvoi", 3900, "[] spawn grad_uhu_fnc_spawnSPWConvoy"],
+	["MIG Flyby", 2100, "[] spawn grad_uhu_fnc_spawnMIGFlyby"]
 ];
 
 {

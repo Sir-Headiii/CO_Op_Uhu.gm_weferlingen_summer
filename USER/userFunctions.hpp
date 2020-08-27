@@ -21,5 +21,6 @@ class CO_OP_Uhu {
 		class startSearchlight {};
 		class startSearchlightSetDir {};
 		class startIntro {};
+		class spawnMIGFlyby {};
 	};
 };
