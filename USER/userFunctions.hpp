@@ -23,5 +23,6 @@ class CO_OP_Uhu {
 		class startIntro {};
 		class spawnMIGFlyby {};
 		class spawnHelicopterFlyby {};
+		class activateAllSirens {};
 	};
 };
