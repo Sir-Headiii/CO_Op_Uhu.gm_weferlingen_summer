@@ -22,5 +22,6 @@ class CO_OP_Uhu {
 		class startSearchlightSetDir {};
 		class startIntro {};
 		class spawnMIGFlyby {};
+		class spawnHelicopterFlyby {};
 	};
 };
