@@ -8,7 +8,7 @@
 	} else {
 		[[], grad_uhu_fnc_startIntro] remoteExec ["spawn", 2];
 	};
-}, [], 30] call CBA_fnc_waitAndExecute;
+}, [], 25] call CBA_fnc_waitAndExecute;
 
 
 [{
