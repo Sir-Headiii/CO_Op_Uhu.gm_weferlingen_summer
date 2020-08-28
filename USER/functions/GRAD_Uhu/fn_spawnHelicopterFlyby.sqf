@@ -14,4 +14,13 @@ _firstWaypoint setWaypointBehaviour "CARELESS";
 private _getOutWaypoint = _heliGroup addWaypoint [_targetPos, 0, 2];
 _getOutWaypoint setWaypointType "GETOUT";
 
-//_heli setPilotLight true;
+private _allCurators = [];
+{
+	_allCurators pushBackUnique (getAssignedCuratorUnit _x);     
+} forEach allCurators;
+
+private _now = date;
+_hour = _now # 3;
+_minute = _now # 4;
+
+[format['[0%1:%2] Heli has spawned and is heading towards Weferlingen Base.', _hour, _minute]] remoteExec ["systemChat", _allCurators];

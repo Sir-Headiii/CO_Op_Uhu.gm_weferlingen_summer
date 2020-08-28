@@ -97,7 +97,7 @@ class LOADOUTNAME {
           vest = "gm_gc_army_vest_80_lmg_str";
           primaryWeapon = "rhs_weap_pm63";
 		        primaryWeaponOptics = "rhs_acc_1p29";
-		        primaryWeaponPointer = "";
+		        primaryWeaponPointer = "rhs_acc_2dpzenit";
 		        primaryWeaponMuzzle = "rhs_acc_dtkakm";
               primaryWeaponUnderbarrel = "";
               primaryWeaponMagazine = "gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk";
