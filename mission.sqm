@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3132;
+		nextID=3161;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=910;
+		nextID=958;
 	};
 	class Camera
 	{
-		pos[]={11028.403,193.88399,2360.7217};
-		dir[]={0.7761597,-0.38057637,0.50296235};
-		up[]={0.31958887,0.92464238,0.20710106};
-		aside[]={0.54387873,2.2868626e-006,-0.8392964};
+		pos[]={10999.452,197.0464,2350.3904};
+		dir[]={0.59772575,-0.32820481,0.73159844};
+		up[]={0.20780595,0.94452208,0.25435326};
+		aside[]={0.77449942,-1.7585699e-006,-0.63277411};
 	};
 };
 binarizationWanted=0;
@@ -7109,7 +7109,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=619;
+		items=639;
 		class Item0
 		{
 			dataType="Layer";
@@ -17859,8 +17859,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11010.768,193.83226,2378.511};
-				angles[]={6.2793632,4.0871248,0};
+				position[]={11001.63,193.81879,2370.502};
+				angles[]={-0,3.4861364,0};
 			};
 			side="Empty";
 			flags=4;
@@ -17869,7 +17869,6 @@ class Mission
 			};
 			id=1774;
 			type="gm_ge_army_u1300l_container";
-			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18020,7 +18019,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""gm_handgrenade_frag_dm51a1"",""gm_smokeshell_wht_dm25"",""gm_smokeshell_grn_dm21"",""gm_smokeshell_red_dm23""],[4,1,1,1]],[[""gm_repairkit_01""],[1]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -18146,8 +18145,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11018.927,193.84259,2376.6987};
-				angles[]={6.259798,4.0561275,0.014852752};
+				position[]={11017.79,193.82544,2375.8352};
+				angles[]={6.2746439,3.4831653,0};
 			};
 			side="Empty";
 			flags=4;
@@ -18156,7 +18155,7 @@ class Mission
 			};
 			id=1798;
 			type="gm_ge_army_u1300l_cargo";
-			atlOffset=-0.0009765625;
+			atlOffset=-0.00057983398;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18307,7 +18306,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""gm_handgrenade_frag_dm51a1"",""gm_smokeshell_wht_dm25"",""gm_smokeshell_grn_dm21"",""gm_smokeshell_red_dm23""],[4,1,1,1]],[[""gm_repairkit_01""],[1]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -39601,6 +39600,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						init="call{this disableAI ""MOVE"";}";
 						name="introOfficer";
 					};
 					id=3009;
@@ -39678,13 +39678,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11044.674,191.88876,2351.7048};
-				angles[]={0.0023161219,1.1292901,0.0025371844};
+				position[]={11044.674,191.88875,2351.7051};
+				angles[]={0.002321288,1.1292979,0.0025307273};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3030;
 			type="Land_TentDome_F";
@@ -39696,12 +39697,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11042.675,191.87602,2355.467};
-				angles[]={-0,0.829144,0.0025371844};
+				angles[]={0,0.82913613,0.0025307273};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3031;
 			type="Land_TentDome_F";
@@ -39711,29 +39713,32 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11041.465,191.88412,2349.0281};
-				angles[]={0.0079935296,3.2241592,0.0048460579};
+				position[]={11041.465,191.88414,2349.0281};
+				angles[]={0.0079936078,3.2241642,0.0048520151};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3032;
 			type="Land_TentDome_F";
+			atlOffset=1.5258789e-005;
 		};
 		class Item571
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11040.476,191.87155,2352.4028};
-				angles[]={-0,4.8773994,0.004858342};
+				position[]={11040.476,191.87155,2352.4031};
+				angles[]={0,4.8773928,0.0048520151};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3033;
 			type="Land_TentDome_F";
@@ -39744,12 +39749,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11035.64,192.14948,2378.823};
-				angles[]={6.2210217,3.91505,0.017486556};
+				angles[]={6.2210217,3.9150527,0.017486556};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3034;
 			type="Land_TentDome_F";
@@ -39759,13 +39765,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11026.148,191.8974,2375.6099};
-				angles[]={6.2403536,2.0238073,0.0013372133};
+				position[]={11026.148,191.89742,2375.6101};
+				angles[]={6.2403545,2.023814,0.0013439035};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3035;
 			type="Land_TentDome_F";
@@ -39775,13 +39782,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11033.575,191.92067,2375.5083};
-				angles[]={6.2297912,1.1420809,0.004784164};
+				position[]={11033.575,191.92067,2375.5081};
+				angles[]={6.2297912,1.1420736,0.004784164};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3036;
 			type="Land_TentDome_F";
@@ -39791,13 +39799,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11029.493,191.99257,2377.2869};
-				angles[]={6.2297912,3.1095254,0.011920535};
+				position[]={11029.493,191.99258,2377.2871};
+				angles[]={6.2297912,3.1095309,0.011920535};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3037;
 			type="Land_TentDome_F";
@@ -39807,13 +39816,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11038.256,191.95074,2374.7112};
-				angles[]={6.2606444,3.6160777,0.017486556};
+				position[]={11038.256,191.95074,2374.7109};
+				angles[]={6.2606444,3.6160779,0.017486556};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3038;
 			type="Land_TentDome_F";
@@ -39823,13 +39833,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11040.134,191.91827,2371.7554};
-				angles[]={6.2606444,4.5461073,0.027283493};
+				position[]={11040.134,191.91827,2371.7549};
+				angles[]={6.2606359,4.5461111,0.027279496};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3039;
 			type="Land_TentDome_F";
@@ -39839,13 +39850,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11046.169,192.06184,2366.5691};
-				angles[]={6.2613621,5.0527339,0.10669451};
+				position[]={11045.193,191.96161,2366.7627};
+				angles[]={6.2613621,5.0527282,0.10669451};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3040;
 			type="Land_TentDome_F";
@@ -39855,13 +39867,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11042.841,191.88768,2364.8884};
-				angles[]={6.2797675,4.8116226,0.0066233813};
+				position[]={11041.864,191.88168,2365.0815};
+				angles[]={6.2820406,4.8116283,0.0066233813};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3041;
 			type="Land_TentDome_F";
@@ -39871,30 +39884,32 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11047.712,192.17464,2363.2434};
-				angles[]={6.2716355,4.2020664,0.10669451};
+				position[]={11046.736,192.07233,2363.4365};
+				angles[]={6.2716355,4.2020721,0.10669451};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3042;
 			type="Land_TentDome_F";
-			atlOffset=0.0020751953;
+			atlOffset=0.0019989014;
 		};
 		class Item581
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11044.582,191.88693,2361.2935};
-				angles[]={6.2797675,4.8679199,0.0066233813};
+				position[]={11043.606,191.88113,2361.4866};
+				angles[]={6.2797675,4.8679156,0.0066233813};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Zelt abbauen"",""Zelt abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Das Zelt wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3043;
 			type="Land_TentDome_F";
@@ -39905,7 +39920,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11033.671,191.5,2363.9939};
-				angles[]={-0,5.4407468,0};
+				angles[]={0,5.4407468,0};
 			};
 			side="Empty";
 			flags=4;
@@ -39922,7 +39937,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11033.414,187.14915,2364.3098};
-				angles[]={-0,5.4407468,0};
+				angles[]={0,5.4407468,0};
 			};
 			side="Empty";
 			flags=4;
@@ -39938,7 +39953,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11034.038,187.14915,2363.5361};
-				angles[]={-0,2.325583,0};
+				angles[]={0,2.325583,0};
 			};
 			side="Empty";
 			flags=4;
@@ -39986,8 +40001,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11060.356,194.53879,2382.7561};
-				angles[]={6.2586708,0,0.053521655};
+				position[]={11069.712,195.91042,2367.6118};
+				angles[]={0.061555434,5.3497801,0.1383383};
 			};
 			side="Empty";
 			flags=4;
@@ -40002,7 +40017,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11035.055,191.25,2360.4011};
+				position[]={11035.358,191.25,2360.1453};
+				angles[]={0,6.0361562,0};
 			};
 			side="Empty";
 			flags=5;
@@ -40017,8 +40033,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11032.646,191.25,2361.1611};
-				angles[]={0,0.62151712,0};
+				position[]={11032.563,191.25,2360.6704};
+				angles[]={0,0.41571635,0};
 			};
 			side="Empty";
 			flags=5;
@@ -40033,8 +40049,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11030.993,191.25,2362.6602};
-				angles[]={0,0.85692108,0};
+				position[]={11030.497,191.25,2362.6401};
+				angles[]={0,1.0920044,0};
 			};
 			side="Empty";
 			flags=5;
@@ -40049,8 +40065,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11030.229,191.25,2364.8115};
-				angles[]={0,1.5688881,0};
+				position[]={11030.111,191.25,2365.4651};
+				angles[]={0,1.7906543,0};
 			};
 			side="Empty";
 			flags=5;
@@ -40065,8 +40081,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11032.55,191.25,2367.22};
-				angles[]={0,3.2444448,0};
+				position[]={11032.584,191.25,2367.554};
+				angles[]={0,2.9288774,0};
 			};
 			side="Empty";
 			flags=5;
@@ -40075,14 +40091,15 @@ class Mission
 			};
 			id=3094;
 			type="land_gm_euro_bench_04";
+			atlOffset=-1.5258789e-005;
 		};
 		class Item593
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11034.853,191.25,2366.3967};
-				angles[]={0,0.66844177,0};
+				position[]={11035.211,191.25,2366.8833};
+				angles[]={0,3.6935587,0};
 			};
 			side="Empty";
 			flags=5;
@@ -40097,8 +40114,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11036.488,191.25,2364.3167};
-				angles[]={0,1.2466552,0};
+				position[]={11037.013,191.25,2364.8472};
+				angles[]={0,4.2579794,0};
 			};
 			side="Empty";
 			flags=5;
@@ -40113,8 +40130,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11037.077,191.25,2361.9983};
-				angles[]={0,1.5688881,0};
+				position[]={11037.356,191.25,2362.0515};
+				angles[]={0,5.0088201,0};
 			};
 			side="Empty";
 			flags=5;
@@ -40129,7 +40146,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11025.732,191.52994,2329.8101};
+				position[]={11025.231,191.52994,2329.7568};
 			};
 			side="Empty";
 			flags=4;
@@ -40144,7 +40161,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11025.695,191.53001,2329.1951};
+				position[]={11025.194,191.52995,2329.1418};
 			};
 			side="Empty";
 			flags=4;
@@ -40159,7 +40176,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11025.723,191.53001,2328.5271};
+				position[]={11025.222,191.52995,2328.4739};
 			};
 			side="Empty";
 			flags=4;
@@ -40174,7 +40191,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11025.696,191.53003,2327.8687};
+				position[]={11025.195,191.52997,2327.8154};
 			};
 			side="Empty";
 			flags=4;
@@ -40189,7 +40206,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11024.664,191.52991,2329.8459};
+				position[]={11024.163,191.52991,2329.7927};
 			};
 			side="Empty";
 			flags=4;
@@ -40204,7 +40221,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11024.711,191.52992,2329.1689};
+				position[]={11024.21,191.52992,2329.1157};
 			};
 			side="Empty";
 			flags=4;
@@ -40219,7 +40236,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11024.703,191.52992,2328.5508};
+				position[]={11024.202,191.52992,2328.4976};
 			};
 			side="Empty";
 			flags=4;
@@ -40234,7 +40251,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11024.734,191.52994,2327.8435};
+				position[]={11024.233,191.52994,2327.7903};
 			};
 			side="Empty";
 			flags=4;
@@ -40249,7 +40266,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11025.646,191.53003,2327.0818};
+				position[]={11025.146,191.52995,2327.0286};
 			};
 			side="Empty";
 			flags=4;
@@ -40264,7 +40281,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11024.71,191.52994,2327.0964};
+				position[]={11024.209,191.52994,2327.0432};
 			};
 			side="Empty";
 			flags=4;
@@ -40279,8 +40296,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11013.623,191.25813,2376.709};
-				angles[]={6.2746506,4.1070213,0.0046949354};
+				position[]={11005.09,191.25002,2370.6182};
+				angles[]={-0,3.5730941,0};
 			};
 			side="Empty";
 			flags=4;
@@ -40289,14 +40306,15 @@ class Mission
 			};
 			id=3110;
 			type="ACE_medicalSupplyCrate_advanced";
+			atlOffset=1.5258789e-005;
 		};
 		class Item607
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11013.18,191.25557,2375.9646};
-				angles[]={6.2793565,4.0862455,0};
+				position[]={11005.085,191.25188,2369.7515};
+				angles[]={-0,3.5523183,0};
 			};
 			side="Empty";
 			flags=4;
@@ -40305,14 +40323,15 @@ class Mission
 			};
 			id=3111;
 			type="gm_AmmoBox_2Rnd_84x245mm_heat_t_DM32_carlgustaf";
+			atlOffset=1.5258789e-005;
 		};
 		class Item608
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11012.713,191.4184,2376.5515};
-				angles[]={6.2793565,4.1037312,0};
+				position[]={11004.386,191.41245,2370.0193};
+				angles[]={-0,3.569804,0};
 			};
 			side="Empty";
 			flags=4;
@@ -40321,14 +40340,15 @@ class Mission
 			};
 			id=3112;
 			type="gm_AmmoBox_4Rnd_mine_at_DM21_put";
+			atlOffset=1.5258789e-005;
 		};
 		class Item609
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11012.653,191.32274,2375.5752};
-				angles[]={6.2793565,4.0684156,0};
+				position[]={11004.831,191.32054,2369.1484};
+				angles[]={-0,3.5344884,0};
 			};
 			side="Empty";
 			flags=4;
@@ -40337,14 +40357,15 @@ class Mission
 			};
 			id=3113;
 			type="gm_AmmoBox_1000Rnd_762x51mm_b_t_DM21A1_g3";
+			atlOffset=1.5258789e-005;
 		};
 		class Item610
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11012.224,191.32487,2376.1321};
-				angles[]={6.2793565,4.0684156,0};
+				position[]={11004.177,191.32054,2369.4092};
+				angles[]={-0,3.5344884,0};
 			};
 			side="Empty";
 			flags=4;
@@ -40353,14 +40374,15 @@ class Mission
 			};
 			id=3114;
 			type="gm_AmmoBox_1000Rnd_762x51mm_b_t_DM21A1_g3";
+			atlOffset=1.5258789e-005;
 		};
 		class Item611
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11012.167,191.41963,2375.2024};
-				angles[]={6.2793565,4.0862346,0};
+				position[]={11004.602,191.41887,2368.5801};
+				angles[]={-0,3.5523074,0};
 			};
 			side="Empty";
 			flags=4;
@@ -40369,6 +40391,7 @@ class Mission
 			};
 			id=3115;
 			type="gm_AmmoBox_480Rnd_762x51mm_b_t_DM21A1_mg3";
+			atlOffset=1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40398,8 +40421,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11011.778,191.42186,2375.7842};
-				angles[]={6.2793632,4.0862346,0};
+				position[]={11003.971,191.41887,2368.8833};
+				angles[]={-0,3.5523074,0};
 			};
 			side="Empty";
 			flags=4;
@@ -40408,6 +40431,7 @@ class Mission
 			};
 			id=3116;
 			type="gm_AmmoBox_480Rnd_762x51mm_b_t_DM21A1_mg3";
+			atlOffset=1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40445,12 +40469,13 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11382.813,107.04952,6752.2319};
-						angles[]={0,5.1065016,0};
+						angles[]={0,4.9769459,0};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{this disableAI ""MOVE"";}";
 						name="introRifleman";
 					};
 					id=3117;
@@ -40516,13 +40541,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11382.278,107.04952,6751.293};
-						angles[]={0,5.3380022,0};
+						position[]={11382.111,107.04952,6751.1729};
+						angles[]={0,5.6688123,0};
 					};
 					side="East";
 					flags=7;
 					class Attributes
 					{
+						init="call{this disableAI ""MOVE"";}";
 						name="introRifleman2";
 					};
 					id=3120;
@@ -40690,15 +40716,808 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11033.594,191.25,2363.8281};
-				angles[]={-0,3.9264598,0};
+				position[]={11033.594,191.25,2363.8279};
+				angles[]={0,3.9264672,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [ " \n "    ""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[30, [], {deleteVehicle CamoNetFire; deleteVehicle CamoNetFireArrow1;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFire";
 			};
 			id=3130;
+			type="land_gm_camonet_04_nato";
+		};
+		class Item619
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11028.583,192.811,2362.988};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetFire; private _nearestHelipads = nearestObjects [CamoNetFire, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1";
+			};
+			id=3135;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item620
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11031.55,192.811,2365.894};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetFire; private _nearestHelipads = nearestObjects [CamoNetFire, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow2";
+			};
+			id=3138;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item621
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11034.343,192.81102,2368.571};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetFire; private _nearestHelipads = nearestObjects [CamoNetFire, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow2_1";
+			};
+			id=3139;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item622
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11032.787,192.811,2358.7151};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetFire; private _nearestHelipads = nearestObjects [CamoNetFire, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_1";
+			};
+			id=3140;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item623
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11035.701,192.811,2361.7671};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetFire; private _nearestHelipads = nearestObjects [CamoNetFire, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_2";
+			};
+			id=3141;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item624
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11038.351,192.811,2364.561};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetFire; private _nearestHelipads = nearestObjects [CamoNetFire, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_3";
+			};
+			id=3142;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item625
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10997.389,192.80981,2367.7};
+				angles[]={0,5.868495,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle1; private _nearestHelipads = nearestObjects [CamoNetVehicle1, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_4";
+			};
+			id=3144;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item626
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11001.637,191.25,2370.488};
+				angles[]={0,3.5117772,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{_action = [ " \n "    ""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[30, [], {deleteVehicle CamoNetFire; deleteVehicle CamoNetFireArrow1;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetVehicle1";
+			};
+			id=3145;
+			type="land_gm_camonet_04_nato";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item627
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10998.934,192.80949,2371.5559};
+				angles[]={0,5.868495,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle1; private _nearestHelipads = nearestObjects [CamoNetVehicle1, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow2_2";
+			};
+			id=3146;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610199;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item628
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11000.411,192.811,2375.1299};
+				angles[]={0,5.868495,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle1; private _nearestHelipads = nearestObjects [CamoNetVehicle1, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow2_3";
+			};
+			id=3147;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item629
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11005.695,192.939,2373.075};
+				angles[]={0,5.868495,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle1; private _nearestHelipads = nearestObjects [CamoNetVehicle1, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_5";
+			};
+			id=3148;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.6889954;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item630
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11004.396,192.811,2369.4509};
+				angles[]={0,5.868495,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle1; private _nearestHelipads = nearestObjects [CamoNetVehicle1, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_6";
+			};
+			id=3149;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.4325562;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item631
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11002.958,192.811,2365.4829};
+				angles[]={0,5.868495,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle1; private _nearestHelipads = nearestObjects [CamoNetVehicle1, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_7";
+			};
+			id=3150;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item632
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11013.554,192.811,2373.1189};
+				angles[]={0,5.8750572,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle2; private _nearestHelipads = nearestObjects [CamoNetVehicle2, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_8";
+			};
+			id=3151;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item633
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11015.123,192.82779,2376.9641};
+				angles[]={0,5.8750572,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle2; private _nearestHelipads = nearestObjects [CamoNetVehicle2, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow2_4";
+			};
+			id=3152;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item634
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11016.624,192.95325,2380.5291};
+				angles[]={0,5.8750572,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle2; private _nearestHelipads = nearestObjects [CamoNetVehicle2, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow2_5";
+			};
+			id=3153;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item635
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11021.895,192.89816,2378.439};
+				angles[]={0,5.8750572,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle2; private _nearestHelipads = nearestObjects [CamoNetVehicle2, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_9";
+			};
+			id=3154;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610199;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item636
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11020.571,192.81105,2374.823};
+				angles[]={0,5.8750572,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle2; private _nearestHelipads = nearestObjects [CamoNetVehicle2, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_10";
+			};
+			id=3155;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item637
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11019.108,192.811,2370.865};
+				angles[]={0,5.8750572,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="call{_action = [""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[60, [], {deleteVehicle CamoNetVehicle2; private _nearestHelipads = nearestObjects [CamoNetVehicle2, [""Land_HelipadEmpty_F""], 6]; {deleteVehicle _x} foreach _nearestHelipads;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetFireArrow1_11";
+			};
+			id=3156;
+			type="Land_HelipadEmpty_F";
+			atlOffset=1.5610046;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item638
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11017.819,191.25751,2375.8784};
+				angles[]={6.2746439,3.5183337,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{_action = [ " \n "    ""Tarnnetz abbauen"",""Tarnnetz abbauen"", """", {[30, [], {deleteVehicle CamoNetFire; deleteVehicle CamoNetFireArrow1;}, {}, ""Das Netz wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="CamoNetVehicle2";
+			};
+			id=3157;
 			type="land_gm_camonet_04_nato";
 		};
 	};

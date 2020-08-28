@@ -33,7 +33,7 @@ class LOADOUTNAME {
 		primaryWeaponPointer = "rhs_acc_2dpzenit";
 		primaryWeaponMuzzle = "rhs_acc_dtk1983";
         primaryWeaponUnderbarrel = "";
-        primaryWeaponUnderbarrelMagazine = "gm_30Rnd_545x39mm_B_T_7t3_ak74_prp";
+        primaryWeaponMagazine = "gm_30Rnd_545x39mm_B_T_7t3_ak74_prp";
         secondaryWeapon = "";
         secondaryWeaponMagazine = "";
 		handgunWeapon = "";
@@ -100,7 +100,7 @@ class LOADOUTNAME {
 		        primaryWeaponPointer = "";
 		        primaryWeaponMuzzle = "rhs_acc_dtkakm";
               primaryWeaponUnderbarrel = "";
-              primaryWeaponUnderbarrelMagazine = "gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk";
+              primaryWeaponMagazine = "gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk";
           
           addItemsToUniform[] = {
               List_1("ACE_MapTools"),
@@ -152,7 +152,7 @@ class LOADOUTNAME {
 		        primaryWeaponPointer = "rhs_acc_2dpzenit";
 		        primaryWeaponMuzzle = "rhs_acc_dtk1983";
               primaryWeaponUnderbarrel = "";
-              primaryWeaponUnderbarrelMagazine = "gm_30Rnd_545x39mm_B_T_7t3_ak74_prp";
+              primaryWeaponMagazine = "gm_30Rnd_545x39mm_B_T_7t3_ak74_prp";
           
           addItemsToUniform[] = {
               List_1("ACE_MapTools"),
