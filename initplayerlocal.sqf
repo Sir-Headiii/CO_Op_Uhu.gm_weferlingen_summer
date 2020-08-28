@@ -35,3 +35,8 @@ _light5 setLightBrightness 60;
 _light5 setLightAmbient [1.0, 1.0, 1.0]; 
 _light5 setLightColor [1.0, 1.0, 1.0]; 
 _light5 lightAttachObject [lightObject5, [0,0,0]];
+
+
+if !(didJIP) then {
+    cutText ["<t size='5'>Kurz warten...</t>", "BLACK FADED", 0, true, true];
+};

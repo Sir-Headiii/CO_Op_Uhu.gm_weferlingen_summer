@@ -1,13 +1,18 @@
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
-sleep 1;
-
 [] call grad_uhu_fnc_startEventTimer;
 
-sleep 10;
+[{
+	if (isDedicated) then {
+		[[], grad_uhu_fnc_startIntro] remoteExec ["spawn", -2];
+	} else {
+		[[], grad_uhu_fnc_startIntro] remoteExec ["spawn", 2];
+	};
+}, [], 20] call CBA_fnc_waitAndExecute;
 
-if (isDedicated) then {
-	[[], grad_uhu_fnc_startIntro] remoteExec ["spawn", -2];
-} else {
-	[[], grad_uhu_fnc_startIntro] remoteExec ["spawn", 2];
-};
+
+[{
+	{
+		deleteVehicle _x;		
+	} forEach [clockCloseup, clockMediumShot, introOfficer, introRifleman, introRifleman2];
+}, [], 140] call CBA_fnc_waitAndExecute;
