@@ -51,13 +51,14 @@ private _allCurators = [];
 private _now = date;
 _hour = _now # 3;
 _minute = _now # 4;
-[format['[0%1:%2] Search Party has disembarked and proceeds to camp...', _hour, _minute]] remoteExec ['systemChat', _allCurators];
-"];
+[format['[0%1:%2] Search Party has disembarked and proceeds to camp...', _hour, _minute]] remoteExec ['systemChat', _allCurators];"
+];
 
 private _attackWaypoint = _attackGroup addWayPoint [_campPosition, 0, 2];
 _attackWaypoint setWaypointType "SAD";
 _attackWaypoint setWaypointBehaviour "AWARE";
 _attackWaypoint setWaypointSpeed "LIMITED";
+_attackWaypoint setWaypointFormation "LINE";
 
 private _allCurators = [];
 {

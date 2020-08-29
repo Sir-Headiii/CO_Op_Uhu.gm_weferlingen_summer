@@ -1,6 +1,6 @@
 private _planeFlightHeight = 400;
-private _spawnPos = [9752.43,20427.2,0];
-private _targetPos = [10006.6,-3493.7,_planeFlightHeight];
+private _spawnPos = [26399.3,19130.7,0];
+private _targetPos = [1.7338,-5161.92, _planeFlightHeight];
 private _planeClass = "rhs_mig29s_vvsc";
 
 private _currentSpawnPos = _spawnPos;
