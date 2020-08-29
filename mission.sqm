@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3409;
+		nextID=3410;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1054;
+		nextID=1070;
 	};
 	class Camera
 	{
-		pos[]={11002.989,473.91754,7145.6763};
-		dir[]={-0.026387805,-0.36988083,-0.92881995};
-		up[]={-0.010506114,0.92902756,-0.36982724};
-		aside[]={-0.99969935,-1.7246293e-007,0.028402258};
+		pos[]={11017.8,196.26924,2351.3696};
+		dir[]={0.51388258,-0.2825048,0.81015056};
+		up[]={0.15134585,0.95923585,0.23859927};
+		aside[]={0.84453237,-1.5366822e-007,-0.53569937};
 	};
 };
 binarizationWanted=0;
@@ -722,7 +722,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=123;
+									items=125;
 									class Item0
 									{
 										class data
@@ -2445,6 +2445,34 @@ class CustomAttributes
 											value="ace_csw_ammohandling";
 										};
 									};
+									class Item123
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="tfar_curatorcamears";
+										};
+									};
+									class Item124
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="tfar_noautomovespectator";
+										};
+									};
 								};
 							};
 						};
@@ -2461,7 +2489,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=123;
+									items=125;
 									class Item0
 									{
 										class data
@@ -7975,6 +8003,96 @@ class CustomAttributes
 															type[]=
 															{
 																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item123
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item124
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
 															};
 														};
 														value=1;
@@ -39718,17 +39836,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11033.671,191.5,2363.9939};
-				angles[]={0,5.4407468,0};
+				position[]={11033.671,191.50026,2363.9939};
+				angles[]={0,5.4407496,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_action = [""Feuerstelle räumen"",""Feuerstelle räumen"", """", {[30, [], {deleteVehicle this;}, {}, ""Die Feuerstelle wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
+				name="firePlace";
 			};
 			id=3053;
 			type="Land_Campfire_burning";
-			atlOffset=0.01473999;
+			atlOffset=0.01499939;
 		};
 		class Item565
 		{
@@ -39800,13 +39920,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11035.358,191.25,2360.1453};
-				angles[]={0,6.0361562,0};
+				position[]={11035.358,191.25,2360.145};
+				angles[]={0,6.0361514,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="call{_action = [""Bank abbauen"",""Bank abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Die Bank wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 2] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3090;
 			type="land_gm_euro_bench_04";
@@ -39816,13 +39937,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11032.563,191.25,2360.6704};
-				angles[]={0,0.41571635,0};
+				position[]={11032.563,191.25,2360.6699};
+				angles[]={0,0.41571999,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="call{_action = [""Bank abbauen"",""Bank abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Die Bank wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 2] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3091;
 			type="land_gm_euro_bench_04";
@@ -39832,13 +39954,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11030.497,191.25,2362.6401};
-				angles[]={0,1.0920044,0};
+				position[]={11030.497,191.25,2362.6399};
+				angles[]={0,1.0920001,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="call{_action = [""Bank abbauen"",""Bank abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Die Bank wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 2] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3092;
 			type="land_gm_euro_bench_04";
@@ -39849,12 +39972,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11030.111,191.25,2365.4651};
-				angles[]={0,1.7906543,0};
+				angles[]={0,1.7906555,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="call{_action = [""Bank abbauen"",""Bank abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Die Bank wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 2] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3093;
 			type="land_gm_euro_bench_04";
@@ -39864,30 +39988,31 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11032.584,191.25,2367.554};
-				angles[]={0,2.9288774,0};
+				position[]={11032.584,191.25002,2367.554};
+				angles[]={0,2.9288719,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="call{_action = [""Bank abbauen"",""Bank abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Die Bank wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 2] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3094;
 			type="land_gm_euro_bench_04";
-			atlOffset=-1.5258789e-005;
 		};
 		class Item574
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11035.211,191.25,2366.8833};
-				angles[]={0,3.6935587,0};
+				position[]={11035.211,191.25,2366.8831};
+				angles[]={0,3.693553,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="call{_action = [""Bank abbauen"",""Bank abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Die Bank wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 2] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3095;
 			type="land_gm_euro_bench_04";
@@ -39897,13 +40022,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11037.013,191.25,2364.8472};
-				angles[]={0,4.2579794,0};
+				position[]={11037.013,191.25,2364.8469};
+				angles[]={0,4.2579751,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="call{_action = [""Bank abbauen"",""Bank abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Die Bank wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 2] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3096;
 			type="land_gm_euro_bench_04";
@@ -39913,13 +40039,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11037.356,191.25,2362.0515};
-				angles[]={0,5.0088201,0};
+				position[]={11037.356,191.25,2362.052};
+				angles[]={0,5.0088158,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				init="call{_action = [""Bank abbauen"",""Bank abbauen"", """", {[30, [], {deleteVehicle this;}, {}, ""Die Bank wird abgebaut...""] call ace_common_fnc_progressBar;}, {true}, {}, [], [], 2] call ace_interact_menu_fnc_createAction;  " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
 			};
 			id=3097;
 			type="land_gm_euro_bench_04";
@@ -40364,8 +40491,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11033.379,191.25,2363.6155};
-				angles[]={0,3.9264672,0};
+				position[]={11033.587,191.25,2363.8318};
+				angles[]={-0,3.9264672,0};
 			};
 			side="Empty";
 			flags=4;
