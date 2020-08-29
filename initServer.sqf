@@ -29,3 +29,10 @@ private _allUnits = allUnits select {(!(isPlayer _x)) && ((side group _x) == eas
 
 	}, [_x], 1] call CBA_fnc_waitAndExecute;	
 } forEach _allUnits;
+
+
+[] spawn {
+	private _halfMapLength = worldSize / 2;
+	private _allSirens = nearestObjects [[_halfMapLength, _halfMapLength, 0], ["gm_structure_siren_base", "land_gm_gc_ds977_50", "land_gm_ge_einheitssirene_57"], sqrt 2 * _halfMapLength];
+	missionNamespace setVariable ["GRAD_allSirens", _allSirens];
+}

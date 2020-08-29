@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1022;
+		nextID=1038;
 	};
 	class Camera
 	{
-		pos[]={13457.62,130.06744,4000.2871};
-		dir[]={-0.76658839,-0.35382876,0.53587317};
-		up[]={-0.29000247,0.93530923,0.20272279};
-		aside[]={0.57293504,3.5017729e-007,0.81960738};
+		pos[]={11006.252,202.47034,2337.2119};
+		dir[]={0.4233138,-0.43829739,0.79296005};
+		up[]={0.20642376,0.89881951,0.38667795};
+		aside[]={0.88220769,3.7159771e-007,-0.47095624};
 	};
 };
 binarizationWanted=0;
@@ -43598,6 +43598,7 @@ class Mission
 			};
 			id=3402;
 			type="EmptyDetector";
+			atlOffset=7.6293945e-006;
 		};
 		class Item686
 		{
@@ -43611,8 +43612,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11478.814,180.18384,2281.416};
-						angles[]={0,5.9086723,0};
+						position[]={11477.745,180.31569,2280.5298};
+						angles[]={0,5.2215686,0};
 					};
 					side="West";
 					flags=7;
@@ -43767,7 +43768,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11481.862,180.05728,2281.1221};
+						position[]={11480.288,180.062,2282.2356};
+						angles[]={0,5.5960817,0};
 					};
 					side="West";
 					flags=5;
