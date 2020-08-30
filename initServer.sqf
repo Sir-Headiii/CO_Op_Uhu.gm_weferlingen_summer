@@ -2,13 +2,13 @@
 
 [] call grad_uhu_fnc_startEventTimer;
 
-[{
-	if (isDedicated) then {
-		[[], grad_uhu_fnc_startIntro] remoteExec ["spawn", -2];
-	} else {
-		[[], grad_uhu_fnc_startIntro] remoteExec ["spawn", 2];
-	};
-}, [], 25] call CBA_fnc_waitAndExecute;
+// [{
+// 	if (isDedicated) then {
+// 		[[], grad_uhu_fnc_startIntro] remoteExec ["spawn", -2];
+// 	} else {
+// 		[[], grad_uhu_fnc_startIntro] remoteExec ["spawn", 2];
+// 	};
+// }, [], 25] call CBA_fnc_waitAndExecute;
 
 
 [{

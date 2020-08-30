@@ -19,7 +19,7 @@
 
 
 loadoutFactionBlu = "";
-loadoutFactionOpf = "LOADOUTNAME";
+loadoutFactionOpf = "Grenzer";
 loadoutFactionInd = "";
 
 // Achtung: grad-factions enthält derzeit keine Loadouts, die für Zivilisten funktionieren
