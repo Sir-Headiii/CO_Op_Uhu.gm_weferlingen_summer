@@ -29,9 +29,9 @@ _camera cameraEffect ["terminate", "BACK"];
 camDestroy _camera;
 
 sleep 2;
-cutText ["", "BLACK IN", 2];
-2 fadeSound 1;
-sleep 2;
+cutText ["", "BLACK IN", 3];
+3 fadeSound 1;
+sleep 3;
 
 showHud true;
 diwako_dui_main_toggled_off = false;
