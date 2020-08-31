@@ -23,14 +23,17 @@
 class shortrange {
     class net1 {
         freq = 50;
+        name = "Kauz"
     };
 
     class net2 {
         freq = 60;
+        name = "Nachtigall"
     };
 
     class net3 {
         freq = 70;
+        name = "Eule"
     };
 
     class net4 {
@@ -59,10 +62,12 @@ class shortrange {
 class longrange {
     class net1 {
         freq = 32;
+        name = "Zugführung"
     };
 
     class net2 {
         freq = 33;
+        name = "Dachs"
     };
 
     class net3 {
